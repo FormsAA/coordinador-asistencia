@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a73e8;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  form label select,
+  form label input,
+  form label textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  form label select:focus,
+  form label input:focus,
+  form label textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1666c1;
+  }
+  
+  #qr {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  #qrcode {
+    margin: 1rem auto;
+    display: block;
+  }
+  
+  #qr-url {
+    font-size: 0.9rem;
+    color: #555;
+    background: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    word-break: break-all;
+    display: inline-block;
+    max-width: 100%;
+  }
+  

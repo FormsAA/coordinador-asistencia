@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Evento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Formulario del Supervisor</h1>
+    <form id="eventoForm">
+      <label>Tipo de evento:
+        <select name="tipo" id="tipo" required>
+          <option value="">Seleccione</option>
+          <option>Junta Directiva</option>
+          <option>Reunión</option>
+          <option>Capacitación</option>
+          <option>Entrenamiento</option>
+        </select>
+      </label>
+    
+      <label>Tema:
+        <input type="text" name="tema" id="tema" required />
+      </label>
+    
+      <label>Subtemas:
+        <textarea name="subtemas" id="subtemas" rows="2"></textarea>
+      </label>
+    
+      <label>Fecha:
+        <input type="date" name="fecha" id="fecha" required />
+      </label>
+    
+      <label>Hora:
+        <input type="time" name="hora" id="hora" required />
+      </label>
+    
+      <label>Duración:
+        <input type="text" name="duracion" id="duracion" required placeholder="Ej. 2 horas" />
+      </label>
+    
+      <label>Facilitador:
+        <input type="text" name="facilitador" id="facilitador" required />
+      </label>
+    
+      <button type="submit">Generar QR</button>
+    </form>
+
+    <section id="qr" style="display:none;">
+      <h2>Escanee para registrar asistencia:</h2>
+      <canvas id="qrcode"></canvas>
+      <p>Link del formulario: <span id="qr-url" style="word-break: break-all;"></span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
